@@ -8,4 +8,4 @@ Deploy your own Docusaurus project with Vercel.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/docusaurus-2&template=docusaurus-2)
 
-_Live Example: https://yarn3-docus.vercel.app/
+_Live Example:_ https://yarn3-docus.vercel.app/
