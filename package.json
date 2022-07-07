@@ -16,7 +16,7 @@
     "write-docs-version": "docusaurus docs:version"
   },
   "dependencies": {
-    "@docusaurus/core": "0.0.0-5179",
+    "@docusaurus/core": "0.0.0-5180",
     "@docusaurus/module-type-aliases": "0.0.0-5179",
     "@docusaurus/plugin-ideal-image": "0.0.0-5179",
     "@docusaurus/plugin-pwa": "0.0.0-5179",
