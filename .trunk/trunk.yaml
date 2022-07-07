@@ -1,9 +1,25 @@
 version: 0.1
 cli:
   version: 0.14.1-beta
+repo:
+  repo:
+    host: github.com
+    owner: ss-o
+    name: docusaurus-vercel
 lint:
+  linters:
+    - name: markdownlint
+      command:
+        [markdownlint, -q, --config, .github/.markdownlint.yaml, "${target}"]
+      direct_configs: [.github/.markdownlint.yaml]
   enabled:
+    - actionlint@1.6.15
     - gitleaks@8.8.11
     - markdownlint@0.31.1
     - prettier@2.7.1
+    - shfmt@3.5.0
     - svgo@2.8.0
+  ignore:
+    - linters: [ALL]
+      paths:
+        - ".yarn/**"

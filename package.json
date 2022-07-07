@@ -1,5 +1,5 @@
 {
-  "name": "docusaurus-2",
+  "name": "docusaurus-vercel",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -45,12 +45,7 @@
     "minimist": ">=1.2.5",
     "axios": ">=0.21.2",
     "nth-check": ">=2.0.1",
+    "got@<11.8.5": ">=11.8.5",
     "trim": ">=0.0.3"
-  },
-  "pnpm": {
-    "overrides": {
-      "got@<11.8.5": ">=11.8.5",
-      "trim@<0.0.3": ">=0.0.3"
-    }
   }
 }

@@ -4973,9 +4973,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"docusaurus-2@workspace:.":
+"docusaurus-vercel@workspace:.":
   version: 0.0.0-use.local
-  resolution: "docusaurus-2@workspace:."
+  resolution: "docusaurus-vercel@workspace:."
   dependencies:
     "@docusaurus/core": 0.0.0-5179
     "@docusaurus/module-type-aliases": 0.0.0-5179
