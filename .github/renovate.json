@@ -1,10 +1,42 @@
 {
-  "extends": ["config:base"],
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":dependencyDashboard",
+    ":semanticPrefixFixDepsChoreOthers",
+    ":ignoreModulesAndTests",
+    ":autodetectPinVersions",
+    ":prHourlyLimit2",
+    ":prConcurrentLimit10",
+    "group:monorepos",
+    "group:recommended",
+    "workarounds:all"
+  ],
   "dependencyDashboardApproval": true,
-  "lockFileMaintenance": { "enabled": true },
+  "commitBody": "Signed-off-by: {{{gitAuthor}}}",
+  "pin": {
+    "commitBody": "[skip CI]"
+  },
+  "groupName": "all dependencies",
+  "separateMajorMinor": false,
+  "groupSlug": "all",
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["*"],
+      "groupName": "all dependencies",
+      "groupSlug": "all"
+    }
+  ],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    },
+    {
+      "matchDepTypes": ["optionalDependencies"],
       "automerge": true
     },
     {
@@ -12,8 +44,12 @@
       "automerge": true
     },
     {
-      "matchUpdateTypes": ["major"],
-      "labels": ["major"]
+      "matchDepTypes": ["peerDependencies"],
+      "automerge": true
+    },
+    {
+      "matchPackagePrefixes": ["@types/"],
+      "automerge": true
     }
   ]
 }
