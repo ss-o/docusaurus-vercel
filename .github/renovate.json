@@ -25,12 +25,7 @@
       "matchPackagePatterns": ["*"],
       "groupName": "all dependencies",
       "groupSlug": "all"
-    }
-  ],
-  "lockFileMaintenance": {
-    "enabled": true
-  },
-  "packageRules": [
+    },
     {
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true
