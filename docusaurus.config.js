@@ -13,7 +13,7 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "ss-o", // Usually your GitHub org/user name.
-  projectName: "docusaurus-vercel", // Usually your repo name.
+  projectName: "vercel-docusaurus", // Usually your repo name.
 
   presets: [
     [
@@ -27,7 +27,7 @@ const config = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/ss-o/docusaurus-vercel/tree/main",
+          editUrl: "https://github.com/ss-o/vercel-docusaurus/tree/main",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -54,7 +54,7 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/ss-o/docusaurus-vercel",
+            href: "https://github.com/ss-o/vercel-docusaurus",
             label: "GitHub",
             position: "right",
           },
@@ -98,7 +98,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/ss-o/docusaurus-vercel",
+                href: "https://github.com/ss-o/vercel-docusaurus",
               },
             ],
           },
