@@ -17,9 +17,6 @@
   "pin": {
     "commitBody": "[skip CI]"
   },
-  "groupName": "all dependencies",
-  "separateMajorMinor": false,
-  "groupSlug": "all",
   "packageRules": [
     {
       "matchPackagePatterns": ["*"],
